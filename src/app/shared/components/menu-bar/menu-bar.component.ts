@@ -15,7 +15,7 @@ export class MenuBarComponent implements OnInit {
         label: 'Angular Pipes',
         icon: 'pi pi-desktop',
         items: [
-          { label: 'Date and Text', icon: PrimeIcons.DESKTOP, routerLink: '' },
+          { label: 'Date and Text', icon: PrimeIcons.DESKTOP, routerLink: '/' },
           {
             label: 'Numbers',
             icon: PrimeIcons.DOLLAR,
