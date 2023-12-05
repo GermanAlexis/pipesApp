@@ -1,0 +1,18 @@
+<p-panel header="Angular Basic" class="py-1">
+  <p>Includes on Common</p>
+</p-panel>
+
+<div class="grid mt-4">
+  <div class="col-12 md:col-6">
+    <p-card header="lowercase"> {{ firstName | lowercase }} </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase"> {{ lastName | uppercase }} </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="titlecase">
+      {{ fullName | titlecase }}
+    </p-card>
+  </div>
+</div>
