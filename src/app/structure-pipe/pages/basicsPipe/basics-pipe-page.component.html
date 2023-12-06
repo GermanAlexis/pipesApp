@@ -16,3 +16,47 @@
     </p-card>
   </div>
 </div>
+
+<div class="grid mt-4">
+  <div class="col-12 md:col-6">
+    <p-card header="lowercase">
+      <ol>
+        <li>date</li>
+        <li>date | date:'short'</li>
+        <li>date | date:'long'</li>
+        <li>date | date:'MMMM'</li>
+        <li>date | date:'MMMM, dd, yyyy'</li>
+      </ol>
+      <hr />
+      <ol>
+        <li>date</li>
+        <li>date | date : "long" : "GTM+1"</li>
+        <li>date | date : "long" : "GTM+5"</li>
+        <li>date | date : "long" : "" : "es-CO"</li>
+        <li>date | date : "long" : "" : "en-US"</li>
+        <li>date | date : "long" : "" : "fr"</li>
+      </ol>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <ol>
+        <li>{{ currentDate }}</li>
+        <li>{{ currentDate | date : "short" }}</li>
+        <li>{{ currentDate | date : "long" }}</li>
+        <li>{{ currentDate | date : "MMMM" }}</li>
+        <li>{{ currentDate | date : "MMMM, dd, yyyy" }}</li>
+      </ol>
+      <hr />
+      <ol>
+        <li>{{ currentDate }}</li>
+        <li>{{ currentDate | date : "long" : "GMT+1" }}</li>
+        <li>{{ currentDate | date : "long" : "GMT-5" }}</li>
+        <li>{{ currentDate | date : "long" : "" : "es-CO" }}</li>
+        <li>{{ currentDate | date : "long" : "" : "en-US" }}</li>
+        <li>{{ currentDate | date : "long" : "" : "fr" }}</li>
+      </ol>
+    </p-card>
+  </div>
+</div>

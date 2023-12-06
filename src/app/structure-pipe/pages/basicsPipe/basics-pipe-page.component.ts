@@ -8,4 +8,5 @@ export class BasicsPipePagesComponent {
   firstName: string = 'German';
   lastName: string = 'Alvarez';
   fullName: string = 'GeRmaN AlVaReZ';
+  currentDate = new Date();
 }

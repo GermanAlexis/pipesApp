@@ -1,11 +1,20 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { SharedModule } from './shared/shared.module';
 import { StructurePipeModule } from './structure-pipe/structure-pipe.module';
+
+import localeEsCO from '@angular/common/locales/es-CO';
+import localeFr from '@angular/common/locales/fr';
+
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEsCO);
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +25,7 @@ import { StructurePipeModule } from './structure-pipe/structure-pipe.module';
     BrowserAnimationsModule,
     SharedModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
