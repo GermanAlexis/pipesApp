@@ -1,1 +1,17 @@
-<p>numeric-pipe-pages works!</p>
+<p-panel header="Numeric Basic" class="py-1">
+  <p>Includes on Common</p>
+</p-panel>
+
+<div class="grid mt-4">
+  <div class="col-12 md:col-6">
+    <p-card header="Sell Total"> {{ totalSell | number }} </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Sell Total">
+      {{ totalSell | currency : "COP" : "symbol-narrow" : "1.2-4" }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Percent Total"> {{ percentSell | percent }} </p-card>
+  </div>
+</div>
